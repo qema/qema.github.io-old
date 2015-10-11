@@ -17,7 +17,8 @@ body {
 }
 
 .header-title:hover {
-    border-bottom: 1pt solid black;
+    color: black;
+    text-decoration: underline;
 }
 
 .header-tagline {
@@ -103,10 +104,11 @@ p {
     font-size: 1em;
 }
 
-pre {
-    font-family: Menlo, "Courier New";
-    background: lightgray;
-    padding: 1em;
+a {
+    color: black;
+}
+a:hover {
+    color: red;
 }
 
 .footer {
