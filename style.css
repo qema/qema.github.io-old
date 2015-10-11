@@ -17,7 +17,7 @@ body {
 }
 
 .header-title:hover {
-    text-decoration: underline;
+    border-bottom: 1pt solid black;
 }
 
 .header-tagline {
