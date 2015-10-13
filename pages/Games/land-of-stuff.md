@@ -8,7 +8,7 @@ You can also check out the source code on GitHub [here](https://github.com/losmm
 
 Full game guide coming soon.
 
-Gallery:
+##Gallery
 
 ![Level Up!](http://wanganzhou.com/images/los/34str.png)
 
