@@ -55,16 +55,15 @@ POST_CONTENT: HTML (not Markdown) content of post. -->
 <p>Check out the source code on GitHub: <a href="https://github.com/losmmorpg/sound-transfer">Sound Transfer</a>.</p>
 <p>Method: The outgoing message is converted into its binary ASCII representation, then converted to pitches with the melodic protocol. The receiver picks up the pitches with Fourier transforms and decodes from binary to ASCII text.</p>
 <p>Here's the protocol.
-<pre><code>
     Pitch   Symbol  Meaning
     ---------------------------------------
     1976 Hz  '!'    Begin transmission.
     1174 Hz  '0'    Send a binary 0.
     784 Hz   '1'    Send a binary 1.
     988 Hz   '*'    Used as a separator between repeated digits.
-    1568 Hz  '.'    End transmission.
-</code></pre></p>
-<p>Wow! So musical! Create your own message melodies!</p>
+    1568 Hz  '.'    End transmission.</p>
+<p>Wow! So musical!<br />
+Create your own message melodies.</p>
 <p>Coming up: Author text classifier.</p>
   </section>
 </article>
