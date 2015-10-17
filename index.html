@@ -54,17 +54,51 @@ POST_CONTENT: HTML (not Markdown) content of post. -->
 <p>Sound Transfer is a system to send a message from your computer to a friend's with speaker and mic. It uses a melodic pitch-based protocol, which means you can hear your message converted into a musical ditty in the process!</p>
 <p>Check out the source code on GitHub: <a href="https://github.com/losmmorpg/sound-transfer">Sound Transfer</a>.</p>
 <p>Method: The outgoing message is converted into its binary ASCII representation, then converted to pitches with the melodic protocol. The receiver picks up the pitches with Fourier transforms and decodes from binary to ASCII text.</p>
-<p>Here's the protocol.
-    Pitch   Symbol  Meaning
-    ---------------------------------------
-    1976 Hz  '!'    Begin transmission.
-    1174 Hz  '0'    Send a binary 0.
-    784 Hz   '1'    Send a binary 1.
-    988 Hz   '*'    Used as a separator between repeated digits.
-    1568 Hz  '.'    End transmission.</p>
+<p>Here's the protocol.</p>
+<pre><code>Pitch   Symbol  Meaning
+---------------------------------------
+1976 Hz  '!'    Begin transmission.
+1174 Hz  '0'    Send a binary 0.
+784 Hz   '1'    Send a binary 1.
+988 Hz   '*'    Used as a separator between repeated digits.
+1568 Hz  '.'    End transmission.
+</code></pre>
 <p>Wow! So musical!<br />
 Create your own message melodies.</p>
 <p>Coming up: Author text classifier.</p>
+  </section>
+</article>
+<!-- Template for each post. Client must provide:
+POST_DATE: Date posted.
+POST_TITLE: Title of post.
+POST_CONTENT: HTML (not Markdown) content of post. -->
+
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      16 Oct 2015
+    </div>
+    <div class="post-title">
+      Hello World!
+    </div>
+  </header>
+  <section class="post-content">
+    <p>Hi. I'm Andrew. I'm in CS at Cornell. I think in computer science and philosophy. I pass the Turing test most of the time. I'm excited to share with you my adventures in artificial intelligence, games and computer music.</p>
+<p>So I'm starting this new blog format. To start off, on Mondays and Fridays, I'll spotlight one of my previous projects. Here's a preview:</p>
+<ul>
+<li>The Land of Stuff: online role-playing game.</li>
+<li>Sound Transfer: transfer data between computers with microphone and speaker.</li>
+<li>Author: a text classifier that figures out who wrote an essay or book.</li>
+</ul>
+<p>This site is made using my own static site generator, <a href="https://github.com/losmmorpg/nanosite">nanosite</a>. The vision is for making website content to be as intuitive and beautiful as possible, through simple tools and workflow. Right now it is a baby.</p>
+<p>Also, here's <a href="https://en.wikipedia.org/wiki/Quicksort">QuickSort</a> in <a href="https://ocaml.org/">OCaml</a>!</p>
+<pre><code>let rec sort = function
+| [] -&gt; []
+| h::t -&gt; let pivot = h in
+          let (left, right) = List.partition ((&gt;) pivot) t in
+          (sort left) @ [pivot] @ (sort right)
+</code></pre>
+<p>Stay tuned for more.</p>
   </section>
 </article>
 <!-- Template for each post. Client must provide:
@@ -114,39 +148,6 @@ AntTerminator:
 It's powerful enough that you can make quests with interesting stories. Yes, there are GOTOs.</p>
 <p>You can check out The Land of Stuff on YouTube: <a href="https://www.youtube.com/playlist?list=PLC03806BA687F460A">Land of Stuff</a>.</p>
 <p>I'm also including a page for the game with info and game guide <a href="http://wanganzhou.com/land-of-stuff.html">here</a>, which you can also get to from the top bar of this website. Happy adventuring!</p>
-  </section>
-</article>
-<!-- Template for each post. Client must provide:
-POST_DATE: Date posted.
-POST_TITLE: Title of post.
-POST_CONTENT: HTML (not Markdown) content of post. -->
-
-<article class="post">
-  <header class="post-header">
-    <div class="post-meta">
-      11 Oct 2015
-    </div>
-    <div class="post-title">
-      Hello World!
-    </div>
-  </header>
-  <section class="post-content">
-    <p>Hi. I'm Andrew. I'm in CS at Cornell. I think in computer science and philosophy. I pass the Turing test most of the time. I'm excited to share with you my adventures in artificial intelligence, games and computer music.</p>
-<p>So I'm starting this new blog format. To start off, on Mondays and Fridays, I'll spotlight one of my previous projects. Here's a preview:</p>
-<ul>
-<li>The Land of Stuff: online role-playing game.</li>
-<li>Sound Transfer: transfer data between computers with microphone and speaker.</li>
-<li>Author: a text classifier that figures out who wrote an essay or book.</li>
-</ul>
-<p>This site is made using my own static site generator, <a href="https://github.com/losmmorpg/nanosite">nanosite</a>. The vision is for making website content to be as intuitive and beautiful as possible, through simple tools and workflow. Right now it is a baby.</p>
-<p>Also, here's <a href="https://en.wikipedia.org/wiki/Quicksort">QuickSort</a> in <a href="https://ocaml.org/">OCaml</a>!</p>
-<pre><code>let rec sort = function
-| [] -&gt; []
-| h::t -&gt; let pivot = h in
-          let (left, right) = List.partition ((&gt;) pivot) t in
-          (sort left) @ [pivot] @ (sort right)
-</code></pre>
-<p>Stay tuned for more.</p>
   </section>
 </article>
 
