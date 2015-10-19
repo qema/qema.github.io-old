@@ -113,6 +113,8 @@ a:hover {
 
 img {
     image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
 }
 
 h2 {
