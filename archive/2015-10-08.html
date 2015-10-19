@@ -2,17 +2,17 @@
 SITE_URL - URL of site (with trailing slash)
 TITLE - Title of site
 HEADER - Header bar (will be generated from header-template.html)
-CONTENT - Main content (will be generated from post-template.html) -->
+CONTENT - Main content (will be generated from post-template.html)
+NAV_LINK - Context-based address to link to (depending on the page)
+NAV_TEXT - The text of the NAV_LINK
+FOOTER - Footer bar (will be generated from footer-template.html)  -->
 
 <!DOCTYPE html>
 <html>
 <head lang="en">
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="http://wanganzhou.com/highlight.css">
-  <script src="http://wanganzhou.com/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <link rel="stylesheet" type="text/css" href="http://wanganzhou.com/style.css">
-  <title>Paradoxical</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="http://wanganzhou.com/style.css">
+    <title>Paradoxical</title>
 </head>
 <body>
   <!-- Template for site header. Client must provide:
@@ -68,6 +68,9 @@ POST_CONTENT: HTML (not Markdown) content of post. -->
   </section>
 </article>
 
+  </div>
+  <div class="bottom-nav">
+    <a href="http://wanganzhou.com/archive.html">Return to archives.</a>
   </div>
   <!-- Template for site footer. Client must provide:
 AUTHOR: Author of site. -->

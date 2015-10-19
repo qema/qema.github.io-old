@@ -34,38 +34,32 @@ MENU: Navigation bar. -->
 </div>
 
   <div class="content">
-    <!-- Template for each page. Client must provide:
-PAGE_TITLE: Title of page.
-CONTENT: HTML (not Markdown) content of page. -->
+    <!-- Template for each post. Client must provide:
+POST_DATE: Date posted.
+POST_TITLE: Title of post.
+POST_CONTENT: HTML (not Markdown) content of post. -->
 
-<article class="page">
-  <header class="page-header">
-    <div class="page-title">
-      Sound Transfer
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      18 Oct 2015
+    </div>
+    <div class="post-title">
+      Author
     </div>
   </header>
-  <section class="page-content">
-    <p><img alt="Sound Transfer" src="http://wanganzhou.com/images/sound-transfer/screenshot.png" /></p>
-<p>Sound Transfer is a system to send a message from your computer to a friend's with speaker and mic. It uses a melodic pitch-based protocol, which means you can hear your message converted into a musical ditty in the process!</p>
-<p>Check out the source code on GitHub: <a href="https://github.com/losmmorpg/sound-transfer">Sound Transfer</a>.</p>
-<p>Method: The outgoing message is converted into its binary ASCII representation, then converted to pitches with the melodic protocol. The receiver picks up the pitches with Fourier transforms and decodes from binary to ASCII text.</p>
-<p>Here's the protocol.</p>
-<pre><code>Pitch   Symbol  Meaning
----------------------------------------
-1976 Hz  '!'    Begin transmission.
-1174 Hz  '0'    Send a binary 0.
-784 Hz   '1'    Send a binary 1.
-988 Hz   '*'    Used as a separator between repeated digits.
-1568 Hz  '.'    End transmission.
-</code></pre>
-<p>Wow! So musical!<br />
-Create your own message melodies.</p>
+  <section class="post-content">
+    <p>!(Author)[http://wanganzhou.com/images/author/screenshot.png]</p>
+<p>Today's spotlight is on Author, which is an exploration in simple text classification. It figures out an author's unique "word signature", which is the distribution of word frequencies in their writing. Based on this, it can take any piece of writing and figure out who wrote it!</p>
+<p>You can check it out on GitHub: <a href="https://github.com/qema/author">Author</a>.</p>
+<p>Makes use of cool probability tools like <a href="http://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/">Bayes' Theorem</a>!</p>
+<p>How it works: we want to find out "The probability that author A wrote book X, if we know that X has a certain word composition." It turns out that we can use Bayes' Theorem to flip this around</p>
   </section>
 </article>
 
   </div>
   <div class="bottom-nav">
-    <a href="http://wanganzhou.com/">Return to home.</a>
+    <a href="http://wanganzhou.com/archive.html">Return to archives.</a>
   </div>
   <!-- Template for site footer. Client must provide:
 AUTHOR: Author of site. -->
