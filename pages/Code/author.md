@@ -1,5 +1,7 @@
 Title: Author
 
+![Author](http://wanganzhou.com/images/author/screenshot.png)
+
 Author is an exploration in simple text classification. It figures out an author's unique "word signature", which is the distribution of word frequencies in their writing. Based on this, it can take any piece of writing and figure out who wrote it!
 
 You can check it out on GitHub: [Author](https://github.com/qema/author).
