@@ -111,6 +111,12 @@ a:hover {
     color: red;
 }
 
+img {
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+}
+
 h2 {
     font-size: 1.2em;
 }
