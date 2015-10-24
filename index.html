@@ -32,12 +32,34 @@ MENU: Navigation bar. -->
     A computer science blog.
   </div>
   <div class="header-menu">
-    <nav class="nav-bar"><ul><li><a href="http://wanganzhou.com/index.html">Home</a></li><li><a href="#">Code</a><ul><li><a href="http://wanganzhou.com/sound-transfer.html">Sound Transfer</a></li><li><a href="http://wanganzhou.com/author.html">Author</a></li></ul></li><li><a href="#">Games</a><ul><li><a href="http://wanganzhou.com/land-of-stuff.html">The Land of Stuff</a></li></ul></li></ul></nav>
+    <nav class="nav-bar"><ul><li><a href="http://wanganzhou.com/index.html">Home</a></li><li><a href="#">Code</a><ul><li><a href="http://wanganzhou.com/author.html">Author</a></li><li><a href="http://wanganzhou.com/sound-transfer.html">Sound Transfer</a></li></ul></li><li><a href="#">Games</a><ul><li><a href="http://wanganzhou.com/land-of-stuff.html">The Land of Stuff</a></li></ul></li></ul></nav>
   </div>
 </div>
 
   <div class="content">
     <!-- Template for each post. Client must provide:
+POST_DATE: Date posted.
+POST_TITLE: Title of post.
+POST_CONTENT: HTML (not Markdown) content of post. -->
+
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      23 Oct 2015
+    </div>
+    <div class="post-title">
+      Berry Hop
+    </div>
+  </header>
+  <section class="post-content">
+    <p>Berry Hop is my current iPhone game project, coded in Swift.</p>
+<p><img alt="Berry Hop" src="http://wanganzhou.com/images/berry/berry.png" /></p>
+<p>My goal is to combine exciting platformer gameplay with the depth of story, puzzle-solving and deep decision making elements common to role-playing games. I'm inspired by games like Hasbro's 3D <a href="https://www.youtube.com/watch?v=ubo6afKReBk">Frogger</a> and <a href="https://en.wikipedia.org/wiki/Super_Mario_Galaxy">Super Mario Galaxy</a>. On the technical side, this involves a deep entity scripting system, map editor and component-based architecture.</p>
+<p><img alt="Map Editor" src="http://wanganzhou.com/images/berry/mapeditor.png" /></p>
+<p>Check out this demo on YouTube: <a href="https://youtu.be/F_fUK3vFJGY">Berry Hop</a>.</p>
+  </section>
+</article>
+<!-- Template for each post. Client must provide:
 POST_DATE: Date posted.
 POST_TITLE: Title of post.
 POST_CONTENT: HTML (not Markdown) content of post. -->
@@ -57,7 +79,6 @@ POST_CONTENT: HTML (not Markdown) content of post. -->
 <p>You can check it out on GitHub: <a href="https://github.com/qema/author">Author</a>.</p>
 <p>Makes use of cool probability tools like <a href="http://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/">Bayes' Theorem</a>!</p>
 <p>How it works: we want to find out "What is the probability that author A wrote book X, if we know that X has a certain word composition?" It turns out that we can use Bayes' Theorem to flip this around, into "What is the probability that X has a certain word composition, if we know that author A wrote the book?" Well, since we know the authors' "word signatures", we already know how to do that -- all we have to do is tally up words! It seems like Bayes' Theorem has the power to reverse causation! What will you do with your new superpower?</p>
-<p>Next time: A computer music interlude!</p>
   </section>
 </article>
 <!-- Template for each post. Client must provide:

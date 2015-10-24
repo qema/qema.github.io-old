@@ -37,38 +37,32 @@ MENU: Navigation bar. -->
 </div>
 
   <div class="content">
-    <!-- Template for each page. Client must provide:
-PAGE_TITLE: Title of page.
-CONTENT: HTML (not Markdown) content of page. -->
+    <!-- Template for each post. Client must provide:
+POST_DATE: Date posted.
+POST_TITLE: Title of post.
+POST_CONTENT: HTML (not Markdown) content of post. -->
 
-<article class="page">
-  <header class="page-header">
-    <div class="page-title">
-      Sound Transfer
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      23 Oct 2015
+    </div>
+    <div class="post-title">
+      Berry Hop
     </div>
   </header>
-  <section class="page-content">
-    <p><img alt="Sound Transfer" src="http://wanganzhou.com/images/sound-transfer/screenshot.png" /></p>
-<p>Sound Transfer is a system to send a message from your computer to a friend's with speaker and mic. It uses a melodic pitch-based protocol, which means you can hear your message converted into a musical ditty in the process!</p>
-<p>Check out the source code on GitHub: <a href="https://github.com/losmmorpg/sound-transfer">Sound Transfer</a>.</p>
-<p>Method: The outgoing message is converted into its binary ASCII representation, then converted to pitches with the melodic protocol. The receiver picks up the pitches with Fourier transforms and decodes from binary to ASCII text.</p>
-<p>Here's the protocol.</p>
-<pre><code>Pitch   Symbol  Meaning
----------------------------------------
-1976 Hz  '!'    Begin transmission.
-1174 Hz  '0'    Send a binary 0.
-784 Hz   '1'    Send a binary 1.
-988 Hz   '*'    Used as a separator between repeated digits.
-1568 Hz  '.'    End transmission.
-</code></pre>
-<p>Wow! So musical!<br />
-Create your own message melodies.</p>
+  <section class="post-content">
+    <p>Berry Hop is my current iPhone game project, coded in Swift.</p>
+<p><img alt="Berry Hop" src="http://wanganzhou.com/images/berry/berry.png" /></p>
+<p>My goal is to combine exciting platformer gameplay with the depth of story, puzzle-solving and deep decision making elements common to role-playing games. I'm inspired by games like Hasbro's 3D <a href="https://www.youtube.com/watch?v=ubo6afKReBk">Frogger</a> and <a href="https://en.wikipedia.org/wiki/Super_Mario_Galaxy">Super Mario Galaxy</a>. On the technical side, this involves a deep entity scripting system, map editor and component-based architecture.</p>
+<p><img alt="Map Editor" src="http://wanganzhou.com/images/berry/mapeditor.png" /></p>
+<p>Check out this demo on YouTube: <a href="https://youtu.be/F_fUK3vFJGY">Berry Hop</a>.</p>
   </section>
 </article>
 
   </div>
   <div class="bottom-nav">
-    <a href="http://wanganzhou.com/">Return to home.</a>
+    <a href="http://wanganzhou.com/archive.html">Return to archives.</a>
   </div>
   <!-- Template for site footer. Client must provide:
 AUTHOR: Author of site. -->
