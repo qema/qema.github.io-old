@@ -32,12 +32,33 @@ MENU: Navigation bar. -->
     A computer science blog.
   </div>
   <div class="header-menu">
-    <nav class="nav-bar"><ul><li><a href="http://wanganzhou.com/index.html">Home</a></li><li><a href="#">Code</a><ul><li><a href="http://wanganzhou.com/author.html">Author</a></li><li><a href="http://wanganzhou.com/sound-transfer.html">Sound Transfer</a></li></ul></li><li><a href="#">Games</a><ul><li><a href="http://wanganzhou.com/land-of-stuff.html">The Land of Stuff</a></li><li><a href="http://wanganzhou.com/berry-hop.html">Berry Hop</a></li></ul></li></ul></nav>
+    <nav class="nav-bar"><ul><li><a href="http://wanganzhou.com/index.html">Home</a></li><li><a href="#">Code</a><ul><li><a href="http://wanganzhou.com/sound-transfer.html">Sound Transfer</a></li><li><a href="http://wanganzhou.com/author.html">Author</a></li></ul></li><li><a href="#">Games</a><ul><li><a href="http://wanganzhou.com/berry-hop.html">Berry Hop</a></li><li><a href="http://wanganzhou.com/land-of-stuff.html">The Land of Stuff</a></li></ul></li><li><a href="#">Music</a><ul><li><a href="http://wanganzhou.com/compositions.html">Compositions</a></li></ul></li></ul></nav>
   </div>
 </div>
 
   <div class="content">
     <!-- Template for each post. Client must provide:
+POST_DATE: Date posted.
+POST_TITLE: Title of post.
+POST_CONTENT: HTML (not Markdown) content of post. -->
+
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      26 Oct 2015
+    </div>
+    <div class="post-title">
+      Music
+    </div>
+  </header>
+  <section class="post-content">
+    <p><img alt="Tie-dye with Prim's Algorithm" src="http://wanganzhou.com/images/music/prim.png" /></p>
+<p>Allow me to introduce to you the new Music section. You'll find that music and computer science have mysterious links. Both are fractally organized, with deep layers of abstraction, ascending from the concrete into the realm of pure form. Both have a profound symmetry that stems from their mathematical roots. But unlike math, which is stoic and frozen in time, these two arts are founded on the temporal: the execution of an algorithm, the performance of a piece. They dance between order and chaos, one to generate insight and meaning, one to charm and captivate. For these arts, reductionism is the key to mastery -- crumbling apart a program into its component functions, or a musical score into individual notes on a staff. But lifting through the clay and looking up to skies of knowledge, we find elegance, sublimity.</p>
+<p>I'll update regularly with my musical explorations.</p>
+<p>Check it out: <a href="http://wanganzhou.com/compositions.html">Compositions</a></p>
+  </section>
+</article>
+<!-- Template for each post. Client must provide:
 POST_DATE: Date posted.
 POST_TITLE: Title of post.
 POST_CONTENT: HTML (not Markdown) content of post. -->
@@ -171,39 +192,6 @@ AntTerminator:
 It's powerful enough that you can make quests with interesting stories. Yes, there are GOTOs.</p>
 <p>You can check out The Land of Stuff on YouTube: <a href="https://www.youtube.com/playlist?list=PLC03806BA687F460A">Land of Stuff</a>.</p>
 <p>I'm also including a page for the game with info and game guide <a href="http://wanganzhou.com/land-of-stuff.html">here</a>, which you can also get to from the top bar of this website. Happy adventuring!</p>
-  </section>
-</article>
-<!-- Template for each post. Client must provide:
-POST_DATE: Date posted.
-POST_TITLE: Title of post.
-POST_CONTENT: HTML (not Markdown) content of post. -->
-
-<article class="post">
-  <header class="post-header">
-    <div class="post-meta">
-      8 Oct 2015
-    </div>
-    <div class="post-title">
-      Hello World!
-    </div>
-  </header>
-  <section class="post-content">
-    <p>Hi. I'm Andrew. I'm in CS at Cornell. I think in computer science and philosophy. I pass the Turing test most of the time. I'm excited to share with you my adventures in artificial intelligence, games and computer music.</p>
-<p>So I'm starting this new blog format. To start off, on Mondays and Fridays, I'll spotlight one of my previous projects. Here's a preview:</p>
-<ul>
-<li>The Land of Stuff: online role-playing game.</li>
-<li>Sound Transfer: transfer data between computers with microphone and speaker.</li>
-<li>Author: a text classifier that figures out who wrote an essay or book.</li>
-</ul>
-<p>This site is made using my own static site generator, <a href="https://github.com/losmmorpg/nanosite">nanosite</a>. The vision is for making website content to be as intuitive and beautiful as possible, through simple tools and workflow. Right now it is a baby.</p>
-<p>Also, here's <a href="https://en.wikipedia.org/wiki/Quicksort">QuickSort</a> in <a href="https://ocaml.org/">OCaml</a>!</p>
-<pre><code>let rec sort = function
-| [] -&gt; []
-| h::t -&gt; let pivot = h in
-          let (left, right) = List.partition ((&gt;) pivot) t in
-          (sort left) @ [pivot] @ (sort right)
-</code></pre>
-<p>Stay tuned for more.</p>
   </section>
 </article>
 
