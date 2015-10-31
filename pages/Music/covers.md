@@ -2,7 +2,7 @@ Title: Covers
 
 I do some interpretations of songs with voice, piano, violin and/or guitar. My tool is Logic Pro. Here's a sampling:
 
-Viva la Vida (Coldplay): A dry woody string quartet combined with filtered vocals. Okay, secret, the cellos are actually violins tuned down an octave. Don't tell the violas.  
+Viva la Vida (Coldplay): A dry woody string quartet combined with filtered vocals. OK, secret, the cellos are actually violins tuned down an octave. Don't tell the violas.  
 <audio controls>
   <source src="http://wanganzhou.com/music/viva-la-vida.mp3" type="audio/mpeg">
   Your browser does not support the audio tag.
