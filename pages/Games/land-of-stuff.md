@@ -4,9 +4,7 @@ The Land of Stuff is an online multiplayer role-playing game. You can explore a 
 
 The full game is available for download here: [The Land of Stuff](http://wanganzhou.com/downloads/land-of-stuff.zip). (Requires Windows)
 
-You can also check out the source code on GitHub [here](https://github.com/losmmorpg/land-of-stuff).
-
-Full game guide coming soon.
+Check out the project page on GitHub [here](https://github.com/losmmorpg/land-of-stuff).
 
 ##Gallery
 
