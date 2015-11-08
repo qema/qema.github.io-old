@@ -1,6 +1,6 @@
 Title: Covers
 
-I do some interpretations of songs with voice, piano, violin and/or guitar. My tool is Logic Pro. Here's a sampling:
+I do covers of songs with voice, piano, violin and/or guitar. My tool is Logic Pro. Here's a sampling:
 
 Viva la Vida (Coldplay): A dry woody string quartet combined with filtered vocals. OK, secret, the cellos are actually violins tuned down an octave. Don't tell the violas.  
 <audio controls>
