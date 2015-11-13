@@ -1,4 +1,4 @@
-Title: Tie-Dye Algorithm
+Title: Tie-Dye
 
 ![Tie-Dye](http://wanganzhou.com/images/tie-dye/tie-dye2.png)
 
