@@ -32,12 +32,45 @@ MENU: Navigation bar. -->
     A computer science blog.
   </div>
   <div class="header-menu">
-    <nav class="nav-bar"><ul><li><a href="http://wanganzhou.com/index.html">Home</a></li><li><a href="#">Code</a><ul><li><a href="http://wanganzhou.com/author.html">Author</a></li><li><a href="http://wanganzhou.com/sound-transfer.html">Sound Transfer</a></li></ul></li><li><a href="#">Games</a><ul><li><a href="http://wanganzhou.com/land-of-stuff.html">The Land of Stuff</a></li><li><a href="http://wanganzhou.com/berry-hop.html">Berry Hop</a></li></ul></li><li><a href="#">Music</a><ul><li><a href="http://wanganzhou.com/compositions.html">Compositions</a></li><li><a href="http://wanganzhou.com/covers.html">Covers</a></li></ul></li></ul></nav>
+    <nav class="nav-bar"><ul><li><a href="http://wanganzhou.com/index.html">Home</a></li><li><a href="#">Code</a><ul><li><a href="http://wanganzhou.com/sound-transfer.html">Sound Transfer</a></li><li><a href="http://wanganzhou.com/author.html">Author</a></li></ul></li><li><a href="#">Games</a><ul><li><a href="http://wanganzhou.com/land-of-stuff.html">The Land of Stuff</a></li><li><a href="http://wanganzhou.com/berry-hop.html">Berry Hop</a></li></ul></li><li><a href="#">Music</a><ul><li><a href="http://wanganzhou.com/compositions.html">Compositions</a></li><li><a href="http://wanganzhou.com/covers.html">Covers</a></li></ul></li></ul></nav>
   </div>
 </div>
 
   <div class="content">
     <!-- Template for each post. Client must provide:
+POST_DATE: Date posted.
+POST_TITLE: Title of post.
+POST_CONTENT: HTML (not Markdown) content of post. -->
+
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      9 Nov 2015
+    </div>
+    <div class="post-title">
+      Tie-Dye Algorithm
+    </div>
+  </header>
+  <section class="post-content">
+    <p>There's some cool theory behind my rainbow tie-dye splashes. They're generated with <a href="https://en.wikipedia.org/wiki/Prim%27s_algorithm">Prim's Minimum Spanning Tree Algorithm</a>, which is a really cool graph algorithm to connect the vertices of a graph, specifically creating a tree with shortest total edge length (or "weight"). It's used for anything from maze generation to circuit design.</p>
+<p>Here's how the Tie Dye works.</p>
+<p>We start out with the idea of turning our computer screen into a graph, with a vertex at every pixel.</p>
+<p><img alt="Graph it!" src="http://wanganzhou.com/images/tie-dye/graph-empty.png" /></p>
+<p>We make a full grid connecting all vertices, assigning random weight to each edge.</p>
+<p><img alt="Connect" src="http://wanganzhou.com/images/tie-dye/graph-full.png" /></p>
+<p>Next we use Prim's Algorithm to connect the edges in a tree. This gets rid of any loops in the graph. Now our computer tie dye will flow into new spaces instead of mixing with itself, just like water tension does for real tie dye.</p>
+<p><img alt="Prim It!" src="http://wanganzhou.com/images/tie-dye/graph0.png" /></p>
+<p>Now, starting from a random point, we'll do a paint bucket fill on it (specifically a <a href="https://en.wikipedia.org/wiki/Depth-first_search">Depth First Search</a>). Except, ours will be a special rainbow paint bucket that changes color after each step, and can only flow along the edges.</p>
+<p><img alt="Flow" src="http://wanganzhou.com/images/tie-dye/graph1.png" /></p>
+<p><img alt="Flow" src="http://wanganzhou.com/images/tie-dye/graph2.png" /></p>
+<p><img alt="Flow" src="http://wanganzhou.com/images/tie-dye/graph3.png" /></p>
+<p><img alt="Flow" src="http://wanganzhou.com/images/tie-dye/graph4.png" /></p>
+<p><img alt="Flow" src="http://wanganzhou.com/images/tie-dye/graph5.png" /></p>
+<p>Now we have a rainbow tie-dye pattern!</p>
+<p>You can make your own Prim Tie-Dyes. I have my tie-dye program on GitHub here: <a href="https://github.com/qema/tie-dye">Tie-Dye</a>. It uses a slightly different implementation where the painting and the Prim are interlaced. Check it out and share your tie-dye creations with the world!</p>
+  </section>
+</article>
+<!-- Template for each post. Client must provide:
 POST_DATE: Date posted.
 POST_TITLE: Title of post.
 POST_CONTENT: HTML (not Markdown) content of post. -->
@@ -127,41 +160,6 @@ POST_CONTENT: HTML (not Markdown) content of post. -->
 <p>You can check it out on GitHub: <a href="https://github.com/qema/author">Author</a>.</p>
 <p>Makes use of cool probability tools like <a href="http://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/">Bayes' Theorem</a>!</p>
 <p>How it works: we want to find out "What is the probability that author A wrote book X, if we know that X has a certain word composition?" It turns out that we can use Bayes' Theorem to flip this around, into "What is the probability that X has a certain word composition, if we know that author A wrote the book?" Well, since we know the authors' "word signatures", we already know how to do that -- all we have to do is tally up words! It seems like Bayes' Theorem has the power to reverse causation! What will you do with your new superpower?</p>
-  </section>
-</article>
-<!-- Template for each post. Client must provide:
-POST_DATE: Date posted.
-POST_TITLE: Title of post.
-POST_CONTENT: HTML (not Markdown) content of post. -->
-
-<article class="post">
-  <header class="post-header">
-    <div class="post-meta">
-      16 Oct 2015
-    </div>
-    <div class="post-title">
-      Sound Transfer
-    </div>
-  </header>
-  <section class="post-content">
-    <p>Here's my next project spotlight.</p>
-<p><img alt="Sound Transfer" src="http://wanganzhou.com/images/sound-transfer/screenshot.png" /></p>
-<p>Sound Transfer is a system to send a message from your computer to a friend's with speaker and mic. It uses a melodic pitch-based protocol, which means you can hear your message converted into a musical ditty in the process!</p>
-<p>Check out the source code on GitHub: <a href="https://github.com/losmmorpg/sound-transfer">Sound Transfer</a>.</p>
-<p>Method: The outgoing message is converted into its binary ASCII representation, then converted to pitches with the melodic protocol. The receiver picks up the pitches with Fourier transforms and decodes from binary to ASCII text.</p>
-<p>Here's the protocol.</p>
-<pre><code>Pitch   Symbol  Meaning
----------------------------------------
-1976 Hz  '!'    Begin transmission.
-1174 Hz  '0'    Send a binary 0.
-784 Hz   '1'    Send a binary 1.
-988 Hz   '*'    Used as a separator between repeated digits.
-1568 Hz  '.'    End transmission.
-</code></pre>
-<p>Wow! So musical!<br />
-Create your own message melodies.</p>
-<p>Like with The Land of Stuff, I'm adding a mini-page for Sound Transfer <a href="http://wanganzhou.com/sound-transfer.html">here</a>, which you can get to anytime using the bar at the top of this website.</p>
-<p>Coming up: Author text classifier.</p>
   </section>
 </article>
 

@@ -45,29 +45,29 @@ POST_CONTENT: HTML (not Markdown) content of post. -->
 <article class="post">
   <header class="post-header">
     <div class="post-meta">
-      8 Oct 2015
+      9 Nov 2015
     </div>
     <div class="post-title">
-      Hello World!
+      Tie-Dye Algorithm
     </div>
   </header>
   <section class="post-content">
-    <p>Hi. I'm Andrew. I'm in CS at Cornell. I think in computer science and philosophy. I pass the Turing test most of the time. I'm excited to share with you my adventures in artificial intelligence, games and computer music.</p>
-<p>So I'm starting this new blog format. To start off, on Mondays and Fridays, I'll spotlight one of my previous projects. Here's a preview:</p>
-<ul>
-<li>The Land of Stuff: online role-playing game.</li>
-<li>Sound Transfer: transfer data between computers with microphone and speaker.</li>
-<li>Author: a text classifier that figures out who wrote an essay or book.</li>
-</ul>
-<p>This site is made using my own static site generator, <a href="https://github.com/losmmorpg/nanosite">nanosite</a>. The vision is for making website content to be as intuitive and beautiful as possible, through simple tools and workflow. Right now it is a baby.</p>
-<p>Also, here's <a href="https://en.wikipedia.org/wiki/Quicksort">QuickSort</a> in <a href="https://ocaml.org/">OCaml</a>!</p>
-<pre><code>let rec sort = function
-| [] -&gt; []
-| h::t -&gt; let pivot = h in
-          let (left, right) = List.partition ((&gt;) pivot) t in
-          (sort left) @ [pivot] @ (sort right)
-</code></pre>
-<p>Stay tuned for more.</p>
+    <p>There's some cool theory behind my rainbow tie-dye splashes. They're generated with <a href="https://en.wikipedia.org/wiki/Prim%27s_algorithm">Prim's Minimum Spanning Tree Algorithm</a>, which is a really cool graph algorithm to connect the vertices of a graph, specifically creating a tree with shortest total edge length (or "weight"). It's used for anything from maze generation to circuit design.</p>
+<p>Here's how the Tie Dye works.</p>
+<p>We start out with the idea of turning our computer screen into a graph, with a vertex at every pixel.</p>
+<p><img alt="Graph it!" src="http://wanganzhou.com/images/tie-dye/graph-empty.png" /></p>
+<p>We make a full grid connecting all vertices, assigning random weight to each edge.</p>
+<p><img alt="Connect" src="http://wanganzhou.com/images/tie-dye/graph-full.png" /></p>
+<p>Next we use Prim's Algorithm to connect the edges in a tree. This gets rid of any loops in the graph. Now our computer tie dye will flow into new spaces instead of mixing with itself, just like water tension does for real tie dye.</p>
+<p><img alt="Prim It!" src="http://wanganzhou.com/images/tie-dye/graph0.png" /></p>
+<p>Now, starting from a random point, we'll do a paint bucket fill on it (specifically a <a href="https://en.wikipedia.org/wiki/Depth-first_search">Depth First Search</a>). Except, ours will be a special rainbow paint bucket that changes color after each step, and can only flow along the edges.</p>
+<p><img alt="Flow" src="http://wanganzhou.com/images/tie-dye/graph1.png" /></p>
+<p><img alt="Flow" src="http://wanganzhou.com/images/tie-dye/graph2.png" /></p>
+<p><img alt="Flow" src="http://wanganzhou.com/images/tie-dye/graph3.png" /></p>
+<p><img alt="Flow" src="http://wanganzhou.com/images/tie-dye/graph4.png" /></p>
+<p><img alt="Flow" src="http://wanganzhou.com/images/tie-dye/graph5.png" /></p>
+<p>Now we have a rainbow tie-dye pattern!</p>
+<p>You can make your own Prim Tie-Dyes. I have my tie-dye program on GitHub here: <a href="https://github.com/qema/tie-dye">Tie-Dye</a>. It uses a slightly different implementation where the painting and the Prim are interlaced. Check it out and share your tie-dye creations with the world!</p>
   </section>
 </article>
 
