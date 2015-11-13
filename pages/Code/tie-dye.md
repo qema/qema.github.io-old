@@ -2,7 +2,11 @@ Title: Tie-Dye Algorithm
 
 ![Tie-Dye](http://wanganzhou.com/images/tie-dye/tie-dye2.png)
 
-There's some cool theory behind my rainbow tie-dye splashes. They're generated with [Prim's Minimum Spanning Tree Algorithm](https://en.wikipedia.org/wiki/Prim%27s_algorithm), which is a really cool algorithm to connect the vertices of a graph, specifically creating a tree with shortest total edge length (or "weight"). It's used for anything from maze generation to circuit design.
+I have program to generate CS-infused tie-dyes with Prim's Algorithm. You can check it out on GitHub here: [Tie-Dye](https://github.com/qema/tie-dye). Create and share your tie-dye creations with the world!
+
+## Method.
+
+The tie-dyes are generated with [Prim's Minimum Spanning Tree Algorithm](https://en.wikipedia.org/wiki/Prim%27s_algorithm), which is a really cool algorithm to connect the vertices of a graph, specifically creating a tree with shortest total edge length (or "weight"). It's used for anything from maze generation to circuit design.
 
 Here's how the Tie Dye works.
 
@@ -31,7 +35,5 @@ Now, starting from a random point, we'll do a paint bucket fill on it (specifica
 ![Flow](http://wanganzhou.com/images/tie-dye/graph5.png)
 
 Now we have a rainbow tie-dye pattern!
-
-You can make your own Prim Tie-Dyes. I have my tie-dye program on GitHub here: [Tie-Dye](https://github.com/qema/tie-dye). It's written in Swift and Cocoa. It uses a slightly different implementation where the painting and the Prim are interlaced. Check it out and share your tie-dye creations with the world!
 
 ![Tie-Dye](http://wanganzhou.com/images/tie-dye/tie-dye1.png)
