@@ -12,7 +12,7 @@ Click to inspect a node, or drag to move a node. Scroll to zoom, or drag the can
 	border: 1px solid lightgray;
     }
 </style>
-<table style="width:50%;">
+<table style="width:70%;">
 <tr><td><b><a onclick="switch_shrew();" href="#">Taming of the Shrew</a></b></td>
 <td><b><a onclick="switch_midsummer();" href="#">Midsummer Night's Dream</a></b></td>
 <td><b><a onclick="switch_hamlet();" href="#">Hamlet</a></b></tr>
