@@ -5,7 +5,7 @@ Title: Dialogue Graphs
 
 <style type="text/css">
     #mynetwork {
-	width: 1200px;
+	width: 100%;
 	height: 800px;
 	border: 1px solid lightgray;
     }
@@ -162,7 +162,7 @@ var edges = new vis.DataSet([
     };
 
     var options = {
-        configure: {enabled: true}
+        configure: {enabled: false}
     };
 
     // initialize your network!
@@ -183,3 +183,11 @@ network.on ("click", function (params) {
     }
 });
 </script>
+
+## About
+
+This is a visualization of social networks in A Midsummer Night's Dream created with Python and [vis.js](http://visjs.org), using data from the [MIT Shakespare collection](http://shakespeare.mit.edu).
+
+Each vertex represents a character, and the edges connect characters who talk with each other. I did this by taking all the sets of characters on stage between each stage direction, and then merging these sets. This turns out to be a good heuristic because it breaks groups between character entrances and exits, and other stage directions simply cause redundant groups to form which get filtered during merging.
+
+The edges are modeled as physical springs with vis.js so clusters tend to form based on the emergent "cliques". Finally, the characters are colored in the graph by popularity.

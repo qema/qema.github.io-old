@@ -4,7 +4,7 @@ Title: Tie-Dye Algorithm
 
 I have program to generate CS-infused tie-dyes with Prim's Algorithm. You can check it out on GitHub here: [Tie-Dye](https://github.com/qema/tie-dye). Create and share your tie-dye creations with the world!
 
-## Method.
+## Method
 
 The tie-dyes are generated with [Prim's Minimum Spanning Tree Algorithm](https://en.wikipedia.org/wiki/Prim%27s_algorithm), which is a really cool algorithm to connect the vertices of a graph, specifically creating a tree with shortest total edge length (or "weight"). It's used for anything from maze generation to circuit design.
 
