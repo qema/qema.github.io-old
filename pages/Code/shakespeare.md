@@ -1,6 +1,6 @@
 Title: Dialogue Graphs
 
-Click to inspect a node, or drag to move a node.
+Click to inspect a node, or drag to move a node. Scroll to zoom, or drag the canvas to pan.
 
 <script type="text/javascript" src="http://wanganzhou.com/lib/vis/vis.js"></script>
 <link href="http://wanganzhou.com/lib/vis/vis.css" rel="stylesheet" type="text/css" />
