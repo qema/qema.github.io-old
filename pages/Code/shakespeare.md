@@ -1,15 +1,15 @@
 Title: Dialogue Graphs
 
-    <script type="text/javascript" src="http://wanganzhou.com/lib/vis/vis.js"></script>
-    <link href="http://wanganzhou.com/lib/vis/vis.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://wanganzhou.com/lib/vis/vis.js"></script>
+<link href="http://wanganzhou.com/lib/vis/vis.css" rel="stylesheet" type="text/css" />
 
-    <style type="text/css">
-        #mynetwork {
-            width: 1200px;
-            height: 800px;
-            border: 1px solid lightgray;
-        }
-    </style>
+<style type="text/css">
+    #mynetwork {
+	width: 1200px;
+	height: 800px;
+	border: 1px solid lightgray;
+    }
+</style>
 <div id="mynetwork"></div>
 
 <script type="text/javascript">

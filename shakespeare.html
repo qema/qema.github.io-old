@@ -32,7 +32,7 @@ MENU: Navigation bar. -->
     A computer science blog.
   </div>
   <div class="header-menu">
-    <nav class="nav-bar"><ul><li><a href="http://wanganzhou.com/index.html">Home</a></li><li><a href="#">Code</a><ul><li><a href="http://wanganzhou.com/shakespeare.html">Dialogue Graphs</a></li><li><a href="http://wanganzhou.com/author.html">Author</a></li><li><a href="http://wanganzhou.com/tie-dye.html">Tie-Dye Algorithm</a></li><li><a href="http://wanganzhou.com/sound-transfer.html">Sound Transfer</a></li></ul></li><li><a href="#">Games</a><ul><li><a href="http://wanganzhou.com/berry-hop.html">Berry Hop</a></li><li><a href="http://wanganzhou.com/land-of-stuff.html">The Land of Stuff</a></li></ul></li><li><a href="#">Music</a><ul><li><a href="http://wanganzhou.com/covers.html">Covers</a></li><li><a href="http://wanganzhou.com/compositions.html">Compositions</a></li></ul></li></ul></nav>
+    <nav class="nav-bar"><ul><li><a href="http://wanganzhou.com/index.html">Home</a></li><li><a href="#">Code</a><ul><li><a href="http://wanganzhou.com/shakespeare.html">Dialogue Graphs</a></li><li><a href="http://wanganzhou.com/author.html">Author</a></li><li><a href="http://wanganzhou.com/sound-transfer.html">Sound Transfer</a></li><li><a href="http://wanganzhou.com/tie-dye.html">Tie-Dye Algorithm</a></li></ul></li><li><a href="#">Games</a><ul><li><a href="http://wanganzhou.com/land-of-stuff.html">The Land of Stuff</a></li><li><a href="http://wanganzhou.com/berry-hop.html">Berry Hop</a></li></ul></li><li><a href="#">Music</a><ul><li><a href="http://wanganzhou.com/compositions.html">Compositions</a></li><li><a href="http://wanganzhou.com/covers.html">Covers</a></li></ul></li></ul></nav>
   </div>
 </div>
 
@@ -48,18 +48,19 @@ CONTENT: HTML (not Markdown) content of page. -->
     </div>
   </header>
   <section class="page-content">
-    <pre><code>&lt;script type="text/javascript" src="http://wanganzhou.com/lib/vis/vis.js"&gt;&lt;/script&gt;
-&lt;link href="http://wanganzhou.com/lib/vis/vis.css" rel="stylesheet" type="text/css" /&gt;
+    <script type="text/javascript" src="http://wanganzhou.com/lib/vis/vis.js"></script>
 
-&lt;style type="text/css"&gt;
+<p><link href="http://wanganzhou.com/lib/vis/vis.css" rel="stylesheet" type="text/css" /></p>
+<style type="text/css">
     #mynetwork {
-        width: 1200px;
-        height: 800px;
-        border: 1px solid lightgray;
+    width: 1200px;
+    height: 800px;
+    border: 1px solid lightgray;
     }
-&lt;/style&gt;
-</code></pre>
-<p><div id="mynetwork"></div></p>
+</style>
+
+<div id="mynetwork"></div>
+
 <script type="text/javascript">
 var nodes = new vis.DataSet([
     {id: 0, label: 'BOTTOM', color: '#0099ff'},
