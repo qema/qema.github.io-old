@@ -1,7 +1,7 @@
 Title: Dialogue Graphs
 
-    <script type="text/javascript" src="../lib/vis/vis.js"></script>
-    <link href="../lib/vis/vis.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://wanganzhou.com/lib/vis/vis.js"></script>
+    <link href="http://wanganzhou.com/lib/vis/vis.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
         #mynetwork {
