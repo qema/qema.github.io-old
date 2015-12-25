@@ -121,10 +121,10 @@ a:hover {
     color: red;
 }
 
-img {
+img {/*
     image-rendering: pixelated;
     image-rendering: -webkit-optimize-contrast;
-    image-rendering: -moz-crisp-edges;
+    image-rendering: -moz-crisp-edges;*/
     max-width: 100%;
 }
 
