@@ -10,13 +10,13 @@ body {
     margin-bottom: 3em;
 }
 
-.header-title, .post-title a {
+.header-title {
     font-size: 3em;
     color: black;
     text-decoration: none;
 }
 
-.header-title:hover, .post-title a:hover {
+.header-title:hover {
     color: black;
     text-decoration: underline;
 }
@@ -95,6 +95,14 @@ body {
     margin-bottom: 0;
     font-size: 1.8em;
     font-weight: bold;
+}
+
+.post-title a {
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    text-decoration: underline;
 }
 
 .post-meta {
