@@ -37,7 +37,11 @@ MENU: Navigation bar. -->
 </div>
 
   <div class="content">
-    <!-- Template for each post. Client must provide:
+    <!-- Template for each archive entry. Client must provide:
+CONTENT: Content of entry.
+PERMALINK: Permalink to this entry. -->
+
+<!-- Template for each post. Client must provide:
 POST_DATE: Date posted.
 POST_TITLE: Title of post.
 POST_CONTENT: HTML (not Markdown) content of post. -->
@@ -71,12 +75,15 @@ POST_CONTENT: HTML (not Markdown) content of post. -->
 <p>You can make your own Prim Tie-Dyes. I have my tie-dye program on GitHub here: <a href="https://github.com/qema/tie-dye">Tie-Dye</a>. It's written in Swift and Cocoa. It uses a slightly different implementation where the painting and the Prim are interlaced. Check it out and share your tie-dye creations with the world!</p>
 <p><img alt="Tie-Dye" src="http://wanganzhou.com/images/tie-dye/tie-dye1.png" /></p>
   </section>
-  <div id="disqus_thread"></div>
+</article>
+
+
+<div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
 this.page.url = "http://wanganzhou.com/archive/2015-11-09.html";
-this.page.identifier = "Tie-Dye Algorithm";
-this.page.title = "Tie-Dye Algorithm";
+this.page.identifier = "http://wanganzhou.com/archive/2015-11-09.html";
+this.page.title = "http://wanganzhou.com/archive/2015-11-09.html";
 };
 (function() {
 var d = document, s = d.createElement('script');
@@ -87,7 +94,6 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
-</article>
 
   </div>
   <div class="bottom-nav">

@@ -37,7 +37,11 @@ MENU: Navigation bar. -->
 </div>
 
   <div class="content">
-    <!-- Template for each post. Client must provide:
+    <!-- Template for each archive entry. Client must provide:
+CONTENT: Content of entry.
+PERMALINK: Permalink to this entry. -->
+
+<!-- Template for each post. Client must provide:
 POST_DATE: Date posted.
 POST_TITLE: Title of post.
 POST_CONTENT: HTML (not Markdown) content of post. -->
@@ -71,12 +75,15 @@ Create your own message melodies.</p>
 <p>Like with The Land of Stuff, I'm adding a mini-page for Sound Transfer <a href="http://wanganzhou.com/sound-transfer.html">here</a>, which you can get to anytime using the bar at the top of this website.</p>
 <p>Coming up: Author text classifier.</p>
   </section>
-  <div id="disqus_thread"></div>
+</article>
+
+
+<div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
 this.page.url = "http://wanganzhou.com/archive/2015-10-16.html";
-this.page.identifier = "Sound Transfer";
-this.page.title = "Sound Transfer";
+this.page.identifier = "http://wanganzhou.com/archive/2015-10-16.html";
+this.page.title = "http://wanganzhou.com/archive/2015-10-16.html";
 };
 (function() {
 var d = document, s = d.createElement('script');
@@ -87,7 +94,6 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
-</article>
 
   </div>
   <div class="bottom-nav">

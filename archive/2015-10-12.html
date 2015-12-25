@@ -37,7 +37,11 @@ MENU: Navigation bar. -->
 </div>
 
   <div class="content">
-    <!-- Template for each post. Client must provide:
+    <!-- Template for each archive entry. Client must provide:
+CONTENT: Content of entry.
+PERMALINK: Permalink to this entry. -->
+
+<!-- Template for each post. Client must provide:
 POST_DATE: Date posted.
 POST_TITLE: Title of post.
 POST_CONTENT: HTML (not Markdown) content of post. -->
@@ -85,12 +89,15 @@ It's powerful enough that you can make quests with interesting stories. Yes, the
 <p>You can check out The Land of Stuff on YouTube: <a href="https://www.youtube.com/playlist?list=PLC03806BA687F460A">Land of Stuff</a>.</p>
 <p>I'm also including a page for the game with info and game guide <a href="http://wanganzhou.com/land-of-stuff.html">here</a>, which you can also get to from the top bar of this website. Happy adventuring!</p>
   </section>
-  <div id="disqus_thread"></div>
+</article>
+
+
+<div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
 this.page.url = "http://wanganzhou.com/archive/2015-10-12.html";
-this.page.identifier = "The Land of Stuff";
-this.page.title = "The Land of Stuff";
+this.page.identifier = "http://wanganzhou.com/archive/2015-10-12.html";
+this.page.title = "http://wanganzhou.com/archive/2015-10-12.html";
 };
 (function() {
 var d = document, s = d.createElement('script');
@@ -101,7 +108,6 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
-</article>
 
   </div>
   <div class="bottom-nav">
