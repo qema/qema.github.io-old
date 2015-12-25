@@ -102,6 +102,7 @@ body {
 }
 
 .post-title a:hover {
+    text-color: black;
     text-decoration: underline;
 }
 
