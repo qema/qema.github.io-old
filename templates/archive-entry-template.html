@@ -1,5 +1,6 @@
 <!-- Template for each archive entry. Client must provide:
 CONTENT: Content of entry.
+POST_TITLE: Title of post.
 PERMALINK: Permalink to this entry. -->
 
 $CONTENT$
@@ -9,7 +10,7 @@ $CONTENT$
 var disqus_config = function () {
 this.page.url = "$PERMALINK$";
 this.page.identifier = "$PERMALINK$";
-this.page.title = "$PERMALINK$";
+this.page.title = "$POST_TITLE$";
 };
 (function() {
 var d = document, s = d.createElement('script');
