@@ -60,7 +60,7 @@ POST_CONTENT: HTML (not Markdown) content of post. -->
     </div>
   </header>
   <section class="post-content">
-    <p>I used Python, <a href="http://visjs.org">vis.js</a> and the <a href="http://shakespeare.mit.edu">MIT Shakespare collection</a> to visualize dialogue networks in Shakespeare plays.</p>
+    <p>I used Python, <a href="http://visjs.org">vis.js</a> and the <a href="http://shakespeare.mit.edu">MIT Shakespeare collection</a> to visualize dialogue networks in Shakespeare plays.</p>
 <h2>Method</h2>
 <p>Each vertex represents a character, and the edges connect characters who talk with each other. I did this by taking all the sets of characters on stage between each stage direction, and then merging these sets. This turns out to be a good heuristic because it breaks groups between character entrances and exits, and other stage directions simply cause redundant groups to form which get filtered during merging.</p>
 <p>The edges are modeled as physical springs with vis.js so clusters tend to form based on the emergent "cliques". Finally, the characters are colored in the graph by popularity.</p>
