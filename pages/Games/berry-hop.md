@@ -8,4 +8,4 @@ Play as Berry as you head through forests and mountains, treacherous ice and ste
 
 The goal is to combine exciting platformer gameplay with the depth of story, puzzle-solving and deep decision making elements common to role-playing games. It's inspired by games like Hasbro's 3D [Frogger](https://www.youtube.com/watch?v=ubo6afKReBk) and [Super Mario Galaxy](https://en.wikipedia.org/wiki/Super_Mario_Galaxy). It features a deep entity scripting system, map editor and component-based architecture.
 
-Check it out on YouTube: [Berry Hop](https://youtu.be/F_fUK3vFJGY).
+Check Berry out on YouTube: [Berry Hop](https://youtu.be/F_fUK3vFJGY).
