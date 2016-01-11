@@ -50,48 +50,34 @@ POST_CONTENT: HTML (not Markdown) content of post. -->
 <article class="post">
   <header class="post-header">
     <div class="post-meta">
-      12 Oct 2015
+      11 Jan 2016
     </div>
     <div class="post-title">
-      <a href="http://wanganzhou.com/archive/2015-10-12.html">The Land of Stuff</a>
+      <a href="http://wanganzhou.com/archive/2016-01-12.html">Odyssey</a>
     </div>
     <div class="post-meta">
-      <!--<a href="http://wanganzhou.com/archive/2015-10-12.html#disqus_thread" data-disqus-identifier="http://wanganzhou.com/archive/2015-10-12.html"></a>-->
+      <!--<a href="http://wanganzhou.com/archive/2016-01-12.html#disqus_thread" data-disqus-identifier="http://wanganzhou.com/archive/2016-01-12.html"></a>-->
     </div>
   </header>
   <section class="post-content">
-    <p>Here's my first project spotlight. The Land of Stuff is an online role playing game coded in <a href="http://freebasic.net">FreeBASIC</a>. It's about exploring a huge world with friends -- fighting monsters, trading loot, going on quests and battling other players. The server was online from 2009 to 2010.</p>
-<p>I'm releasing it here in two ways.</p>
-<ul>
-<li>You download the full game as-is, <a href="http://wanganzhou.com/downloads/land-of-stuff.zip">here</a>. (Requires Windows)</li>
-<li>I'm also releasing the source code on GitHub, <a href="https://github.com/losmmorpg/land-of-stuff">here</a>. You can customize the game or create your own adventure world.</li>
-</ul>
-<p><img alt="The Land of Stuff" src="http://wanganzhou.com/images/los/people.png" /></p>
-<p>The Land of Stuff is based on a simple C++ text adventure I made called The Adventures of Carl.</p>
-<p><img alt="The Adventures of Carl" src="http://wanganzhou.com/images/los/carl.png" /></p>
-<p>What carried over was the idea of simple mechanics and a focus on exploration.
-Here's the world map of The Land of Stuff:</p>
-<p><img src="http://wanganzhou.com/images/los/map.png" alt="World Map" style="width: 640px;"/></p>
-<p>Here's the Fid City Zoo:</p>
-<p><img alt="Fid City Zoo" src="http://wanganzhou.com/images/los/screen15.png" /></p>
-<p>It also features an extensive (though rudimentary) scripting system for relatively involved quests and NPC (non-player character) interactions. For example, here's a snippet of the Ant Terminator quest:
-<pre><code class="nohighlight">
-AntTerminator:
-  SLAY 05 00
-  IF_AC1
-    SPEECH Are you done yet?
-    REPLY Yep!
-    SPEECH Thank you! Here's 50 dollars.
-    REPLY Yay!
-    MONEY 50
-    MSG You've beat Ant Terminator!
-    AC0
-    GOTO Finished
-  END_IF
-</code></pre>
-It's powerful enough that you can make quests with interesting stories. Yes, there are GOTOs.</p>
-<p>You can check out The Land of Stuff on YouTube: <a href="https://www.youtube.com/playlist?list=PLC03806BA687F460A">Land of Stuff</a>.</p>
-<p>I'm also including a page for the game with info and game guide <a href="http://wanganzhou.com/land-of-stuff.html">here</a>, which you can also get to from the top bar of this website. Happy adventuring!</p>
+    <p>Odyssey is another game from the FreeBASIC era, which I planned to be the successor to <a href="http://wanganzhou.com/land-of-stuff.html">The Land of Stuff</a>. Eventually I integrated its improved server into the Land of Stuff for its rehaul.</p>
+<p><img alt="Odyssey" src="http://wanganzhou.com/images/odyssey/filled.png" /></p>
+<p>A sci-fi MMORPG, it reached the closed beta stage and is one of my only projects to break into the third dimension. I implemented the 3D engine from scratch using 2D line drawing, inspired by a QBasic pseudo-3D racing game which achieved bigger than life perspective effects.</p>
+<p><img alt="Odyssey" src="http://wanganzhou.com/images/odyssey/wire.png" /></p>
+<h2>Red versus Blue</h2>
+<p>In terms of game mechanics, Odyssey is also an oddity, featuring a combat system based on opposing red and blue forces, with a neutral gray. The world was split in this way, with each faction receiving its own weapons and resources.</p>
+<p><img src="http://wanganzhou.com/images/odyssey/blueshield.png" />
+<img src="http://wanganzhou.com/images/odyssey/neophite.png" /></p>
+<p>Blue Shield and Neophyte rock.</p>
+<p><img src="http://wanganzhou.com/images/odyssey/redshield.png" />
+<img src="http://wanganzhou.com/images/odyssey/strinite.png" /></p>
+<p>Red Shield and Strinite rock.</p>
+<p>Which side would you join?</p>
+<h2>Toolbox</h2>
+<p>Finally it was another step towards extensive tooling in my projects, from an EXP curve planner to a rule-breaker logger. Here's the EXP grapher:</p>
+<p><img alt="EXP curve" src="http://wanganzhou.com/images/odyssey/grapher.png" /></p>
+<h2>But Some Things Stay the Same</h2>
+<p>Like most of my games it also featured multiple planet environments to launch to and explore. Adventure is everywhere.</p>
   </section>
 </article>
 
@@ -100,9 +86,9 @@ It's powerful enough that you can make quests with interesting stories. Yes, the
 <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-this.page.url = "http://wanganzhou.com/archive/2015-10-12.html";
-this.page.identifier = "http://wanganzhou.com/archive/2015-10-12.html";
-this.page.title = "The Land of Stuff";
+this.page.url = "http://wanganzhou.com/archive/2016-01-12.html";
+this.page.identifier = "http://wanganzhou.com/archive/2016-01-12.html";
+this.page.title = "Odyssey";
 };
 (function() {
 var d = document, s = d.createElement('script');
