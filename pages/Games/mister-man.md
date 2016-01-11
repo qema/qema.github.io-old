@@ -1,6 +1,6 @@
-Title: The Adventures of Mister Man
+Title: Mister Man
 
-Mister Man is a platformer game I made in FreeBASIC. It features four exotic worlds that you can jump into and explore, including a boss! [Berry Hop](http://wanganzhou.com/archive/2015-10-23.html) is the successor to this game.
+The Adventures of Mister Man is a platformer game I made in FreeBASIC. It features four exotic worlds that you can jump into and explore, including a boss! [Berry Hop](http://wanganzhou.com/archive/2015-10-23.html) is the successor to this game.
 
 ![Mister Man](http://wanganzhou.com/images/misterman/misterman.png)
 
