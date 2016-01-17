@@ -48,6 +48,9 @@ body {
     display: inline-block;
     color: black;
 }
+.nav-bar li a[href="#"] {
+    cursor: default;
+}
 
 .nav-bar li:hover {
     cursor: default;
