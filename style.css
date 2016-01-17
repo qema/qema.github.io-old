@@ -50,6 +50,7 @@ body {
 }
 .nav-bar ul li a[href="#"]:hover {
     color: black;
+    cursor: default;
 }
 
 .nav-bar li:hover {
