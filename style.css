@@ -48,7 +48,7 @@ body {
     display: inline-block;
     color: black;
 }
-.nav-bar li a[href="#"] {
+.nav-bar ul li a[href="#"] {
     color: black;
     cursor: default;
 }
