@@ -1,5 +1,12 @@
+@font-face {
+	font-family: 'Charter';
+	src: url('fonts/Charter.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
-    font-family: Cambria;
+    font-family: Charter;
     margin-left: 20%;
     margin-right: 20%;
 }
