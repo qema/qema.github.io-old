@@ -1,0 +1,9 @@
+Go Left
+Go Right
+Don’t Fire
+Hold Position
+Proceed
+Follow Me
+Dot
+Dash
+Stay Here

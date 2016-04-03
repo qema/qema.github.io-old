@@ -1,0 +1,14 @@
+Strafe left
+Strafe right
+Follow me
+Stop
+Proceed
+Meet here
+Dot
+Dash
+Out of ammo
+
+
+
+
+[ Military ]
